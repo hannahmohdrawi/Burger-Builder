@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-shadow: 4px 4px black;
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px black;
+    margin-top: 0;
+}
+
+.burger-builder-container{
+    height:auto;
+    width: auto;
+    border: 2px solid white;
+    background-color: rgb(18, 130, 228, 0.3);
+    padding: 50px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+h3{
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+    font-size: 2rem;
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 2px slategrey;
+    background-color: blanchedalmond;
+    color: black;
+    outline: none;
+}
+
+.button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
