@@ -6,6 +6,8 @@ function reset(){
     radios.forEach((radio => {
         radio.checked = false;
     }))
+    let order = [];
+    document.getElementById('order-info').textContent = order;
 }
 
 function submitOrder(){
@@ -16,6 +18,6 @@ function submitOrder(){
         }
     });
     document.getElementById('order-info').textContent = order;
-
 }
-    
+
+
