@@ -8,7 +8,11 @@ function reset(){
     }))
     let order = [];
     document.getElementById('order-info').textContent = order;
+
+    submittedOrder.textContent = "";
 }
+
+const submittedOrder = document.getElementById('order-submitted');
 
 function submitOrder(){
     let order = [];
@@ -18,6 +22,9 @@ function submitOrder(){
         }
     });
     document.getElementById('order-info').textContent = order;
+
+
+    submittedOrder.textContent = "Your order has been submitted! 🍔 "
 }
 
 
