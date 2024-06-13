@@ -34,6 +34,25 @@ h3{
     font-size: 2rem;
 }
 
+.submitMessage-open{
+    background-color: orange;
+    display: block;
+}
+
+.popup{
+    visibility:hidden;
+}
+
+.display-popup{
+    visibility: visibile;
+}
+
+.burger-image{
+    border: 2px solid white;
+    height: 200px;
+    width: auto;
+}
+
 button{
     width: 100px;
     height: 50px;

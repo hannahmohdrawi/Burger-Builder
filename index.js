@@ -14,6 +14,11 @@ function reset(){
 
 const submittedOrder = document.getElementById('order-submitted');
 
+function showSubmit(){
+    let submitMessage = document.getElementsByClassName("submitMessage");
+    submitMessage.classList.add("submitMessage-open");
+}
+
 function submitOrder(){
     let order = [];
     radios.forEach(radio => {
@@ -22,8 +27,6 @@ function submitOrder(){
         }
     });
     document.getElementById('order-info').textContent = order;
-
-
     submittedOrder.textContent = "Your order has been submitted! 🍔 "
 }
 
