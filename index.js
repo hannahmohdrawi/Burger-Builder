@@ -30,4 +30,8 @@ function submitOrder(){
     submittedOrder.textContent = "Your order has been submitted! 🍔 "
 }
 
+function displayBurger(){
+    let burgerContainer = document.getElementsByClassName("burger-image");
+    
+}
 
