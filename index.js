@@ -14,10 +14,14 @@ function reset(){
 
 const submittedOrder = document.getElementById('order-submitted');
 
-function showSubmit(){
+/*
+function showSubmitMessage(){
     let submitMessage = document.getElementsByClassName("submitMessage");
     submitMessage.classList.add("submitMessage-open");
+    
 }
+*/
+
 
 function submitOrder(){
     let order = [];
@@ -28,8 +32,24 @@ function submitOrder(){
     });
     document.getElementById('order-info').textContent = order;
     submittedOrder.textContent = "Your order has been submitted! 🍔 "
+
+    toggleResults();
 }
 
+function toggleResults(){
+    let burgerSelectorContainer=document.getElementsByClassName("burger-builder-container")
+    let resultsContainer=document.getElementsByClassName("order");
+    if (burgerSelectorContainer.style.display === "none"){
+        burgerSelectorContainer.style.display === "block";
+        resultsContainer.style.display = "none";
+    }else{
+        burgerSelectorContainer.style.display = "none";
+        resultsContainer.style.display = "block";
+    }
+    
+}
+
+//Function to show each burger image item
 function displayBurger(){
     let burgerContainer = document.getElementsByClassName("burger-image");
     

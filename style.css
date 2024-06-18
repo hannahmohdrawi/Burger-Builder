@@ -38,6 +38,7 @@ h3{
     background-color: orange;
     display: block;
 }
+/*
 
 .popup{
     visibility:hidden;
@@ -46,6 +47,7 @@ h3{
 .display-popup{
     visibility: visibile;
 }
+*/
 
 .burger-image{
     border: 2px solid white;
@@ -68,4 +70,12 @@ button{
 button:hover{
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.order{
+    display: none;
+}
+
+.displayOrder{
+    display
 }
