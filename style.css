@@ -13,8 +13,8 @@ h1{
 
 h2{
     font-size: 3rem;
-    color: whitesmoke;
-    text-shadow: 2px 2px black;
+    color: black;
+    text-shadow: 2px 2px whitesmoke;
     margin-top: 0;
 }
 
@@ -22,34 +22,27 @@ h2{
     height:auto;
     width: auto;
     border: 2px solid white;
-    background-color: hsl(286, 39%, 76%, 0.7);
+    background-color: hsl(286, 39%, 76%, 0.8);
     padding: 50px;
 }
 
 label {
     font-size: 1rem;
+    color: black;
 }
 
 h3{
     text-decoration: underline;
     text-shadow: 2px 2px black;
     font-size: 2rem;
+    color: black;
+    text-shadow: 2px 2px whitesmoke;
 }
 
 .submitMessage-open{
     background-color: orange;
     display: block;
 }
-/*
-
-.popup{
-    visibility:hidden;
-}
-
-.display-popup{
-    visibility: visibile;
-}
-*/
 
 .customTextbox{
     visibility: hidden;

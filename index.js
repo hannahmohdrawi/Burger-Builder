@@ -14,15 +14,6 @@ function reset(){
 
 const submittedOrder = document.getElementById('order-submitted');
 
-/*
-function showSubmitMessage(){
-    let submitMessage = document.getElementsByClassName("submitMessage");
-    submitMessage.classList.add("submitMessage-open");
-    
-}
-*/
-
-
 function submitOrder(){
     let order = [];
     radios.forEach(radio => {
@@ -33,17 +24,7 @@ function submitOrder(){
     document.getElementById('order-info').textContent = order;
     submittedOrder.textContent = "Your order has been submitted! 🍔 "
 
-    toggleResults();
 }
-
-function toggleResults(){
-    let burgerSelectorContainer=document.getElementsByClassName(".burger-builder-container")
-    let resultsContainer=document.getElementsByClassName(".order-results");
-    
-    
-}
-
-console.log(toggleResults())
 
 //Function to show each burger image item
 function displayBurger(){
@@ -52,11 +33,16 @@ function displayBurger(){
 }
 
 function displayCustomItems(){
-    let customItemsButton = document.getElementsByClassName("customRadioButton");
-    let customTextBox = document.getElementsByClassName("customTexbox")
-    if(customItemsButton.checked){
-        customTextBox.classList.add("displayTextbox");
-
+    let customItemsButton = document.querySelectorAll(".customRadioButton");
+    let customTextBox = document.querySelectorAll(".customTextbox");
+    
+    for(let i= 0; i < customItemsButton.length; i++){
+        customItemsButton[i].addEventListener('click', function showTextBox(){
+            let textBox = customTextBox[i];
+            textBox.classList.toggle('displayTextbox')
+        });
     }
 }
+
+displayCustomItems();
 
