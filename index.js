@@ -37,21 +37,26 @@ function submitOrder(){
 }
 
 function toggleResults(){
-    let burgerSelectorContainer=document.getElementsByClassName("burger-builder-container")
-    let resultsContainer=document.getElementsByClassName("order");
-    if (burgerSelectorContainer.style.display === "none"){
-        burgerSelectorContainer.style.display === "block";
-        resultsContainer.style.display = "none";
-    }else{
-        burgerSelectorContainer.style.display = "none";
-        resultsContainer.style.display = "block";
-    }
+    let burgerSelectorContainer=document.getElementsByClassName(".burger-builder-container")
+    let resultsContainer=document.getElementsByClassName(".order-results");
+    
     
 }
+
+console.log(toggleResults())
 
 //Function to show each burger image item
 function displayBurger(){
     let burgerContainer = document.getElementsByClassName("burger-image");
     
+}
+
+function displayCustomItems(){
+    let customItemsButton = document.getElementsByClassName("customRadioButton");
+    let customTextBox = document.getElementsByClassName("customTexbox")
+    if(customItemsButton.checked){
+        customTextBox.classList.add("displayTextbox");
+
+    }
 }
 

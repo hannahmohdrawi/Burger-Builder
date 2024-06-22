@@ -21,6 +21,7 @@
                 <label for="single-beef"> Single Beef Patty</label>
             </div>
 
+
             <div>
                 <input type="radio" class="radioBtn" value="double-beef">
                 <label for="double-beef"> Double Beef Patty</label>
@@ -34,6 +35,15 @@
             <div>
                 <input type="radio" class="radioBtn" value="veggie">
                 <label for="veggie"> Veggie Patty</label>
+            </div>
+
+            <div>
+                <input type="radio" class="customRadioBtn" value="custom" onclick="displayCustomItems">
+                <label for="veggie"> Add custom items</label>
+            </div>
+
+            <div class="customItems">
+                <input type="textbox" class="customTextbox" value="" placeholder="Add item here">
             </div>
         </div>
 
@@ -59,6 +69,15 @@
                 <input type="radio" class="radioBtn" value="mushroom">
                 <label for="mushroom"> Grilled Mushroom</label>
             </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="custom">
+                <label for="veggie"> Add custom items</label>
+            </div>
+
+            <div class="customItems">
+                <input type="textbox" class="radioBtn" value="">
+            </div>
             
         </div>
 
@@ -79,6 +98,15 @@
                 <input type="radio" class="radioBtn" value="BBQ">
                 <label for="BBQ"> Smokey BBQ</label>
             </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="custom">
+                <label for="veggie"> Add custom items</label>
+            </div>
+
+            <div class="customItems">
+                <input type="textbox" class="radioBtn" value="">
+            </div>
         </div>
 
         <div class="bun">
@@ -97,11 +125,20 @@
                 <input type="radio" class="radioBtn" value="gf">
                 <label for="gf"> Gluten free</label>
             </div>
+
+            <div>
+                <input type="radio" class="radioBtn" value="custom">
+                <label for="veggie"> Add custom items</label>
+            </div>
+
+            <div class="customItems">
+                <input type="textbox" class="radioBtn" value="">
+            </div>
             
         </div>
 
         
-            <div class="order">
+            <div class="order-results">
                 <p>Your order:</p>
                 <p id="order-info"></p>
                 <p id="order-submitted" class="submitMessage"></p>
